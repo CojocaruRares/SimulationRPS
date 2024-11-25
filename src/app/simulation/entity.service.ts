@@ -43,13 +43,22 @@ export class EntityService {
       const entity: Entity = {
         id: this.entityCounter++,
         type,
-        x: Math.random() * 770,
-        y: Math.random() * 570,
-        velocityX: (Math.random() - 0.5) * 3,
-        velocityY: (Math.random() - 0.5) * 3,
+        x: Math.random() * 750,
+        y: Math.random() * 550,
+        velocityX: (Math.random() - 0.5) * 2,
+        velocityY: (Math.random() - 0.5) * 2,
       };
       this.entities.push(entity)
     }
+  }
+
+  getEntityCount(type: EntityType):number{
+    let counter = 0;
+    this.entities.forEach((entity) => {
+      if(entity.type == type)
+        counter++;
+    })
+    return counter;
   }
 
   generateEntities(rockCount:number, scissorsCount:number, paperCount:number): void {

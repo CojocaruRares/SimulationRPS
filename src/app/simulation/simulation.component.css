@@ -44,3 +44,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.data-container{
+  display:flex;
+  gap: 100px;
+  align-items: center;
+}
