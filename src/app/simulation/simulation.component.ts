@@ -3,11 +3,13 @@ import { EntityService, Entity, EntityType } from './entity.service';
 import { CommonModule } from '@angular/common';
 import { EntityComponent } from './entity/entity.component';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+import { ChartData, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-simulation',
   standalone: true,
-  imports: [CommonModule, EntityComponent, FormsModule],
+  imports: [CommonModule, EntityComponent, FormsModule, ChartsModule],
   templateUrl: './simulation.component.html',
   styleUrls: ['./simulation.component.css'],
 })
