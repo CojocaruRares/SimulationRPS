@@ -1,0 +1,38 @@
+<div class="simulation-container">
+  <div class="controls">
+    <label>
+      Rocks:
+      <input type="number" [(ngModel)]="rockCount" min="0" />
+    </label>
+    <label>
+      Papers:
+      <input type="number" [(ngModel)]="paperCount" min="0" />
+    </label>
+    <label>
+      Scissors:
+      <input type="number" [(ngModel)]="scissorsCount" min="0" />
+    </label>
+    <label>
+      Speed:
+      <input
+        type="range"
+        class="speed-slider"
+        [(ngModel)]="velocityMultiplier"
+        min="1"
+        max="10"
+        value="3"
+        step="1"
+      />
+      <span>{{ velocityMultiplier }}</span>
+    </label>
+    <button (click)="startSimulation()">Start</button>
+  </div>
+
+  <div *ngIf="!isRunning && winner != null" class="winner-display">
+    <h1>Winner: {{ winner }}</h1>
+  </div>
+
+  <div class="entity-container">
+    <app-entity *ngFor="let entity of entities" [entity]="entity"> </app-entity>
+  </div>
+</div>

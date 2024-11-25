@@ -1,0 +1,23 @@
+.entity {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.rock {
+  background-image: url('../../../../avatars/rock.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.paper {
+  background-image: url('../../../../avatars/paper.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.scissors {
+  background-image: url('../../../../avatars/scissors.png');
+  background-size: cover;
+  background-position: center;
+}

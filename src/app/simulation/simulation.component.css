@@ -1,0 +1,46 @@
+.simulation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.winner-display {
+  margin: 20px 0;
+  color: #2b2b2b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.entity-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.speed-slider {
+  margin-left: 10px;
+  width: 150px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
