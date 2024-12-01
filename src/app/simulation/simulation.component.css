@@ -1,7 +1,12 @@
 .simulation-container {
   display: flex;
+  gap:20px;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #40514E; 
+  padding-top: 100px;
 }
 
 .controls {
@@ -13,7 +18,7 @@
 
 .winner-display {
   margin: 20px 0;
-  color: #2b2b2b;
+  color: #30E3CA; 
   font-size: 24px;
   font-weight: bold;
 }
@@ -22,9 +27,10 @@
   position: relative;
   width: 800px;
   height: 600px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border: 2px solid #11999E; 
+  background-color: #E4F9F5; 
   overflow: hidden;
+  border-radius: 8px; 
 }
 
 .speed-slider {
@@ -33,20 +39,42 @@
 }
 
 button {
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: white;
+  margin-left: 20px;
+  padding: 10px 25px;
+  background-color: #11999E; 
+  color: #E4F9F5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #30E3CA; 
 }
 
-.data-container{
-  display:flex;
+.data-container {
+  display: flex;
   gap: 100px;
   align-items: center;
+  color: #E4F9F5;
 }
+
+input[type="text"],
+input[type="number"],
+input[type="range"] {
+  padding: 8px;
+  width: 200px;
+  border: 2px solid #30E3CA; 
+  border-radius: 5px; 
+  background-color: #E4F9F5; 
+  color: #40514E; 
+  font-size: 16px;
+}
+
+label {
+  font-size: 16px; 
+  color: #30E3CA; 
+  font-weight: bold; 
+}
+
